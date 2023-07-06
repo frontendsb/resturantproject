@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -6,9 +7,9 @@ function Header() {
       <header id="header-section">
         <div className="container">
           <nav className="navbar navbar-expand-lg">
-            <a className="navbar-brand" href="#">
+            <Link to='/' className="navbar-brand">
               Navbar
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -26,29 +27,29 @@ function Header() {
             >
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">
+                  <Link to='/' className="nav-link">
                     Home <span className="sr-only">(current)</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to='/' className="nav-link">
                   Favourites
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to='/' className="nav-link">
                   Profile
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to='/' className="nav-link">
                   Go premium
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    to="/"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
@@ -56,21 +57,18 @@ function Header() {
                     aria-expanded="false"
                   >
                    <i className="fa-solid fa-gear"></i>
-                  </a>
+                  </Link>
                   <div
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    <a className="dropdown-item" href="#">
+                    <Link to='/' className="dropdown-item">
                     help and guide
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
+                    </Link>
                     <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
+                    <Link to='/' className="dropdown-item">
                       Something else here
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
