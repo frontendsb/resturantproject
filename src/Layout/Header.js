@@ -20,6 +20,7 @@ function Header() {
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon" />
+              <i className="fa-solid fa-bars"></i>
             </button>
             <div
               className="collapse navbar-collapse"
@@ -28,7 +29,7 @@ function Header() {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
                   <Link to='/' className="nav-link">
-                    Home <span className="sr-only">(current)</span>
+                    Home 
                   </Link>
                 </li>
                 <li className="nav-item">
