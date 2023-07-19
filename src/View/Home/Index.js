@@ -1,8 +1,14 @@
 import React from 'react'
+import './Home.css';
+import Banner from './Banner';
 
 function Index() {
   return (
-    <div>Index</div>
+    <>
+
+    <Banner/>
+    
+    </>
   )
 }
 

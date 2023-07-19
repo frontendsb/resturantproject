@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  }, []);
+
+  const isSticky = (e) => {
+    const header = document.querySelector(".mainheader");
+    const scrollTop = window.scrollY;
+    scrollTop >= 100
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
   return (
     <>
-      <header id="header-section">
+      <header id="header-section" className="mainheader is-sticky">
         <div className="container">
           <nav className="navbar navbar-expand-lg">
             <Link to='/' className="navbar-brand">
