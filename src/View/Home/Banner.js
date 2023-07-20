@@ -53,6 +53,7 @@ function Banner() {
   return (
     <>
       <section id="banner-section">
+        <h2>Restaurant</h2>
         <Slider {...settings}>
           <div className="item">
             <img className='img-fluid' src={Bg1} alt="bg" />
