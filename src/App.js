@@ -6,7 +6,7 @@ import Banner from "./View/Home/Banner";
 import OurMenu from "./View/Home/OurMenu";
 import BookTable from "./View/Home/BookTable";
 import Profile from "./View/Profile/Index";
-import Comment from "./View/Profile/Comment";
+import Default from "./View/Profile/Default";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route path="/ourmenu" element={<OurMenu />} />
             <Route path="/booktable" element={<BookTable />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/comment" element={<Comment />} />
+            <Route path="/default" element={<Default />} />
           </Route>
         </Routes>
       </Router>

@@ -1,11 +1,11 @@
 import React from "react";
 import "./profile.css";
-import Comment from "../Profile/Comment";
+import Default from "./Default";
 
 function Index() {
   return (
     <>
-      <Comment />
+      <Default />
     </>
   );
 }

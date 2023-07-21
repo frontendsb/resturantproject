@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Default from './View/Profile/Default';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const styleLink = document.createElement("link");
+styleLink.rel = "stylesheet";
+styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
+document.head.appendChild(styleLink);
+
 root.render(
   <React.StrictMode>
     <App />
+    <Default image = 'https://www.gravatar.com/avatar' />
   </React.StrictMode>
 );
 
