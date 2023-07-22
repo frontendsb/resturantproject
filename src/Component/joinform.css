@@ -1,0 +1,68 @@
+#join-form{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#join-form h2{
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding-bottom: 4px;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #91a701;
+    margin: 0;
+}
+
+#join-form input{
+    width: 100%;
+    height: 55px;
+    border-color: #dbb902;
+    padding-left: 20px;
+    border-radius: 3px;
+    color: #91a701;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    outline: 0;
+    box-shadow: none;
+}
+
+#join-form textarea{
+    width: 100%;
+    height: 130px;
+    resize: none;
+    border-radius: 3px;
+    border-color: #dbb902;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: #91a701;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    outline: 0;
+    box-shadow: none;
+}
+
+#join-form .submit_btn{
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: #208d06;
+    font-family: "Raleway", sans-serif;
+    color: #dbb902;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}

@@ -9,6 +9,8 @@ import Profile from "./View/Profile/Index";
 import Default from "./View/Profile/Default";
 import Premium from "./View/Premium/Index";
 import Subscribe from "./View/Premium/Subscribe";
+import JoinForm from "./Component/JoinForm";
+import Testimonial from "./View/Profile/Testimonial";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/default" element={<Default />} />
             <Route path="/premium" element={<Premium />} />
             <Route path="/subscribe" element={<Subscribe />} />
+            <Route path="/joinform" element={<JoinForm />} />
+            <Route path="/testimonial" element={<Testimonial />} />
           </Route>
         </Routes>
       </Router>
