@@ -14,7 +14,6 @@ document.head.appendChild(styleLink);
 root.render(
   <React.StrictMode>
     <App />
-    <Default image = 'https://www.gravatar.com/avatar' />
   </React.StrictMode>
 );
 

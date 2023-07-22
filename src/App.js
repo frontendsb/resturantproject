@@ -7,6 +7,8 @@ import OurMenu from "./View/Home/OurMenu";
 import BookTable from "./View/Home/BookTable";
 import Profile from "./View/Profile/Index";
 import Default from "./View/Profile/Default";
+import Premium from "./View/Premium/Index";
+import Subscribe from "./View/Premium/Subscribe";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Route path="/booktable" element={<BookTable />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/default" element={<Default />} />
+            <Route path="/premium" element={<Premium />} />
+            <Route path="/subscribe" element={<Subscribe />} />
           </Route>
         </Routes>
       </Router>

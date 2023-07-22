@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { Button, Comment, Form, Header } from "semantic-ui-react";
+import At from '../../images/avatar.png';
 
 const image_url = "https://www.gravatar.com/avatar";
 const current_user = "Me";
@@ -36,7 +37,7 @@ const DataComment = (props) => {
 
   return (
     <Comment>
-      <Comment.Avatar src={image_url} />
+      <Comment.Avatar src={At} />
       <Comment.Content>
         <Comment.Author as="a">{props.data.author}</Comment.Author>
         <Comment.Metadata>
@@ -94,14 +95,15 @@ const DataComment = (props) => {
 };
 
 const Default = () => (
-  <div>
-    <Comment.Group>
+  <div className="container">
+    <Comment.Group> 
+    <h2>You Can Give Your Valuable Feedback Here!</h2>
       <Header as="h3" dividing>
         Comments
       </Header>
       {data.map((e, i) => (
         <DataComment data={e} />
-      ))}
+      ))} 
     </Comment.Group>
   </div>
 );
