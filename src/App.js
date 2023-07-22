@@ -11,6 +11,9 @@ import Premium from "./View/Premium/Index";
 import Subscribe from "./View/Premium/Subscribe";
 import JoinForm from "./Component/JoinForm";
 import Testimonial from "./View/Profile/Testimonial";
+import Favourites from "./View/Favourites/Index";
+import Team from "./View/Favourites/Team";
+import Place from "./View/Favourites/Place";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
             <Route path="/subscribe" element={<Subscribe />} />
             <Route path="/joinform" element={<JoinForm />} />
             <Route path="/testimonial" element={<Testimonial />} />
+            <Route path="/favourites" element={<Favourites />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/place" element={<Place />} />
           </Route>
         </Routes>
       </Router>

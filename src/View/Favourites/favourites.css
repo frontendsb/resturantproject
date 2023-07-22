@@ -1,0 +1,218 @@
+/* Team Start */
+
+#team {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+#team h2 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-bottom: 4px;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #91a701;
+  margin: 0;
+}
+
+#team .title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#team .content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* max-width: 400px; */
+  /* margin: auto; */
+  overflow: hidden;
+}
+#team .content .content-overlay {
+  background: rgba(145, 167, 1, 0.4);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+#team .content:hover .content-overlay {
+  opacity: 1;
+}
+#team .content-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+#team .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#team .content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+#team .content-details h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-bottom: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #198b05;
+  margin: 0;
+  letter-spacing: 0.15em;
+}
+#team .content-details p {
+  color: #fff;
+  font-size: 16px;
+}
+
+#team .content-details .m_link{
+    padding: 0px 10px;
+    font-size: 22px;
+    color: #208d06;
+}
+#team .fadeIn-bottom {
+  top: 80%;
+}
+#team .fadeIn-top {
+  top: 20%;
+}
+#team .fadeIn-left {
+  left: 20%;
+}
+#team .fadeIn-right {
+  left: 80%;
+}
+
+/* Place Start */
+
+#place {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+   padding-top: 80px;
+  }
+  
+  #place h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: #1c1c1c;
+    margin: 0;
+  }
+  
+  #place .place_wrap {
+    position: relative;
+  }
+  
+  #place .place_img {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #place .place_img::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+  }
+  
+  #place .place_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease-out;
+  }
+  
+  #place .place_cnt {
+    background-color: #91a701;
+    padding: 20px;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+  
+  #place .place_cnt h4 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-bottom: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #208d06;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 0;
+  }
+  
+  #place .place_cnt p {
+    font-family: "Lato", sans-serif;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: normal;
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  #place .place_cnt i {
+    margin-right: 5px;
+    color: #198b05;
+  }
+
+  #place .place_cnt strong{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #place .place_wrap:hover .place_img img {
+    transform: scale(1.2);
+  }
+  
+  /* #place .place_wrap:hover .place_cnt {
+    background-color: #17082d;
+    color: #fff;
+  } */
+  
+  /* #place .place_wrap:hover .place_cnt h4 {
+    color: #fff;
+  } */
