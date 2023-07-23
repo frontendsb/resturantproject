@@ -28,7 +28,7 @@ function Footer() {
               <p>Riverside Building, County Hall, London SE1 7PB, UK</p>
             </div>
             <div className='dwnld'>
-              <h3>Download From</h3>
+              <h3 style={{color: '#208d06', fontWeight: '700'}}>Download From</h3>
               <a href='#' className='s_link'><img className='img-fluid' src={As} alt='pic'/></a>
               <a href='#' className='s_link'><img className='img-fluid' src={Gs} alt='pic'/></a>
             </div>

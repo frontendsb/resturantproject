@@ -44,7 +44,7 @@ body {
 
 #header-section .nav-link {
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #91a701;
   font-weight: 500;
   /* font-size: 18px; */
   transition: all 0.5s;
@@ -83,13 +83,18 @@ body {
     height: auto;
   } */
 
+  #header-section .nav-link{
+    color: #1b8c07;
+    font-weight: 600;
+  }
+
   #header-section .navbar-toggler-icon {
     width: 0;
     height: 0;
   }
 
   #header-section .navbar-toggler i {
-    color: #fff;
+    color: #91a701;
   }
 
   #header-section button:focus {
@@ -102,7 +107,8 @@ body {
   }
 
   #header-section .navbar-collapse {
-    padding: 20px 0;
+    padding: 20px 20px;
+    background-color: #91a701;
   }
 }
 /* Header End */
@@ -123,7 +129,7 @@ body {
   text-align: center;
   padding-bottom: 8px;
   padding-top: 8px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
@@ -159,6 +165,7 @@ body {
 
 #footer .ft_cnt p {
   color: #fff;
+  font-size: 16px;
   padding: 10px 0;
 }
 
