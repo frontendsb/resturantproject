@@ -1,9 +1,14 @@
 import React from 'react'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function Subscribe() {
+    AOS.init({
+        duration: 1500,
+      })
   return (
     <>
-    <section id='subscribe'>
+    <section id='subscribe' data-aos={"fade-up"}>
         <div className='container'>
             <h2>Subscribe to Our Premium Features</h2>
             <div className='row pt-5'>

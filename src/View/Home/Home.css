@@ -81,6 +81,41 @@
   object-position: center;
 }
 
+#banner-section .slick-slider .slick-arrow.slick-prev {
+  left: 20px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 9;
+}
+
+#banner-section:hover .slick-prev:before{
+opacity: 1;
+}
+
+#banner-section .slick-prev:before{
+  content: '\f053';
+  font-family: 'fontAwesome';
+  font-size: 35px;
+  line-height: 1;
+  opacity: 0;
+  color: #91a701;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.5s;
+}
+
 /* Responsive Start */
 
 @media(max-width: 991px){
@@ -282,6 +317,7 @@
     width: 100%;
     height: 60px;
     background-color: #91a701;
+    border-radius: 5px;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -295,7 +331,13 @@
     border: none;
     box-shadow: none;
     outline: 0;
+    transition: all 0.5s;
 }
+
+#book-table .table_cnt button:hover{
+  background-color: #d9b805;
+}
+
 #book-table .serach_location{
   width: 100%;
   height: auto;

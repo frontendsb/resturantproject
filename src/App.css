@@ -1,5 +1,3 @@
-/* 
-
 
 /* Header Start */
 
@@ -14,13 +12,11 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   box-sizing: border-box;
-  /* font-family: 'Open Sans', sans-serif;
-  font-family: 'Montserrat', sans-serif; */
 }
 
 #header-section {
   width: 100%;
-  height: 55px;
+  height: 110px;
   background-color: transparent;
 }
 
@@ -31,7 +27,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 999;
   transition: all 0.5s;
 }
 .is-sticky {
@@ -42,11 +38,16 @@ body {
   color: #d9b805 !important;
 }
 
+#header-section .navbar-brand img{
+  width: 110px;
+  height: auto;
+}
+
 #header-section .nav-link {
   font-family: "Montserrat", sans-serif;
   color: #91a701;
   font-weight: 500;
-  /* font-size: 18px; */
+  font-size: 16px;
   transition: all 0.5s;
 }
 
@@ -136,6 +137,22 @@ body {
   margin: 0;
 }
 
+#footer .ft_logo{
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#footer .ft_logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+
+}
+
 #footer .ft_cnt {
   text-align: center;
 }
@@ -144,6 +161,11 @@ body {
   padding: 0px 10px;
   font-size: 22px;
   color: #208d06;
+  transition: all 0.5s;
+}
+
+#footer .ft_cnt .m_link:hover{
+  color: #d9b805;
 }
 
 #footer .ft_cnt .c_link {

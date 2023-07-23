@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Help from "../Component/Help";
+import Logo from '../images/logo.png';
 
 function Header() {
   const [openModal, setOpenModal] = useState(false);
@@ -25,7 +26,7 @@ function Header() {
         <div className="container">
           <nav className="navbar navbar-expand-lg">
             <Link to='/' className="navbar-brand">
-              Navbar
+              <img className='img-fluid' src={Logo} alt='logo'/>
             </Link>
             <button
               className="navbar-toggler"
@@ -84,9 +85,6 @@ function Header() {
                     help and guide
                     </Link>
                     <div className="dropdown-divider" />
-                    <Link to='/' className="dropdown-item">
-                      Something else here
-                    </Link>
                   </div>
                 </li>
               </ul>

@@ -36,12 +36,20 @@ h2{
     border-radius: 5px!important;
 }
 
+.ui.comments .comment .metadata {
+    color: rgba(0,0,0,.7)!important;
+}
+
+.ui.comments .comment .actions a {
+    color: rgba(0,0,0,.7)!important;
+}
+
 /* Testimonial Start */
 
 #testimonial{
     width: 100%;
     height: auto;
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
 #testimonial .item{

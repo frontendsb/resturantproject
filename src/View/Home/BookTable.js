@@ -1,9 +1,14 @@
 import React from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function BookTable() {
+  AOS.init({
+    duration: 1500,
+  })
   return (
     <>
-      <section id="book-table">
+      <section id="book-table" data-aos={"fade-up"}>
         <div className="container">
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12 col-12">

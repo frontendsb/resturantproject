@@ -6,7 +6,7 @@ const image_url = "https://www.gravatar.com/avatar";
 const current_user = "Me";
 
 const data = [
-  { author: "Matt", comment: "How artistic!", day: "Today", comments: [] },
+  { author: "Matt", comment: "Place is so Good and Food is too yummy!", day: "Today", comments: [] },
   {
     author: "Elliot Fu",
     comment: "This has been very useful for my research. Thanks as well!",
@@ -99,7 +99,7 @@ const Default = () => (
     <Comment.Group> 
     <h2>You Can Give Your Valuable Feedback Here!</h2>
       <Header as="h3" dividing>
-        Comments
+        Comments Section
       </Header>
       {data.map((e, i) => (
         <DataComment data={e} />

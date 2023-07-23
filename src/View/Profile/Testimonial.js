@@ -5,9 +5,15 @@ import "slick-carousel/slick/slick-theme.css";
 import Ci from "../../images/testi_avatar.png";
 import C2 from "../../images/testi_avatar 2.png";
 import C3 from "../../images/testi_avatar_02.png";
-import C4 from "../../images/testi_avatar_03.png"
+import C4 from "../../images/testi_avatar_03.png";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function Testimonial() {
+  AOS.init({
+    duration: 1500,
+  })
+
   var settings = {
     dots: true,
     infinite: false,
@@ -53,7 +59,7 @@ function Testimonial() {
   };
   return (
     <>
-      <section id="testimonial">
+      <section id="testimonial" data-aos={"fade-up"}>
         <div className="container">
           <h2>See What Our Clients Say</h2>
 

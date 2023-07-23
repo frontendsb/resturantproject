@@ -2,11 +2,16 @@ import React from "react";
 import T1 from "../../images/team-1.webp";
 import T2 from "../../images/team-2.webp";
 import T3 from "../../images/team-3.webp";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function Team() {
+  AOS.init({
+    duration: 1500,
+  })
   return (
     <>
-      <section id="team">
+      <section id="team" data-aos={"fade-up"}>
         <div className="container">
           <h2>Our Team Members</h2>
           <div className="row pt-5">

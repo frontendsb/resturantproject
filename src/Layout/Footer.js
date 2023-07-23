@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import As from '../images/app_store.png';
 import Gs from '../images/g_store.png';
+import Flogo from '../images/ft-logo.png';
 
 function Footer() {
   return (
@@ -11,8 +12,8 @@ function Footer() {
       <div className='row'>
         <div className='col-xl-12 col-lg-12 col-md-12 col-12'>
           <div className='ft_cnt'>
-            <div>
-              <Link to='/'><img className='img-fluid' src='/' alt='logo'/></Link>
+            <div className='ft_logo'>
+              <Link to='/'><img className='img-fluid' src={Flogo} alt='logo'/></Link>
             </div>
             <div className='social'>
               <h3>Follow Our Activity</h3>
