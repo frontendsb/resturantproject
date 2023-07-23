@@ -1,7 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Help from "../Component/Help";
 
 function Header() {
+  const [openModal, setOpenModal] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -77,7 +80,7 @@ function Header() {
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    <Link to='/' className="dropdown-item">
+                    <Link to='/' className="dropdown-item" onClick={()=>{setOpenModal(true)}}>
                     help and guide
                     </Link>
                     <div className="dropdown-divider" />
@@ -91,6 +94,7 @@ function Header() {
           </nav>
         </div>
       </header>
+      {openModal &&<Help closeModal={setOpenModal}/>}
     </>
   );
 }

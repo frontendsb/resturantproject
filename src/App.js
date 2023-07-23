@@ -14,6 +14,7 @@ import Testimonial from "./View/Profile/Testimonial";
 import Favourites from "./View/Favourites/Index";
 import Team from "./View/Favourites/Team";
 import Place from "./View/Favourites/Place";
+import Help from "./Component/Help";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/favourites" element={<Favourites />} />
             <Route path="/team" element={<Team />} />
             <Route path="/place" element={<Place />} />
+            <Route path="/help" element={<Help />} />
           </Route>
         </Routes>
       </Router>
